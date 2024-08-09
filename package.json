@@ -18,8 +18,5 @@
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1"
   },
-  "devDependencies": {},
   "description": "^0.0.4"
-
-
 }
