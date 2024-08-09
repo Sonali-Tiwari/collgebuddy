@@ -1,0 +1,95 @@
+:root{
+  --white:white;
+  --black:black;
+  --green:#79B058;
+  --secondry:#153D50;
+  --gray:#ECECEC;
+  
+}
+
+.none{
+  display: none;
+}
+
+.button{
+  background: var(--green);
+  color: var(--white);
+  border-radius: 10px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  gap: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.hoverbtn:hover{
+  color: white;
+  background: #000;
+}
+
+.flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+
+/* hover btn animation */
+
+
+.btn {
+  margin: 100px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  background-color: #79B058;
+}
+
+
+.btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #79B058, #57b620, #8bff48, #5fb42d,
+    #8adb5c, #42ac05, #66bb38, #79B058
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active:after {
+  background: transparent;
+}
+

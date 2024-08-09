@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="height-full">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/star-animation.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/login-button.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="../../svgs/college-buddy-logo-01.svg" alt="logo">
+        </div>
+        <div class="navbar-button">
+            <!-- <button id="sign-up">sign up</button> -->
+        </div>
+    </div>
+    <div class="login-window">
+        <div class="login-window-title">
+            <h1>Login</h1>
+            <h3 id="">Welcome back!</h3>
+        </div>
+        <form action="" class="form login" id="form" onsubmit="return false;">
+            <div class="input-box">
+
+                <input id="email-id-field" type="email" id="email" name="email" placeholder="Email Address">
+                <input id="password-field" type="password" name="password" id="password" placeholder="Password">
+                <div class="reset-password-div">
+                    <p id="reset-line">Don’t you remember password?</p>
+                    <a id="reset-line-button" href="">Reset Here</a>
+                </div>
+                <div class="login-button-div">
+                    <a href="/"> <button id="login-button" type="submit">Start Learning Now</button></a>
+                    <!-- </div> -->
+                    <!-- </form> -->
+                    <!-- </div> -->
+
+
+                    <!-- <a href="/"> <div class="login-button-div">
+            <input type="submit" value="Sign In" >
+           </div></a> -->
+
+                    <p>New Here?<a href="/register">Create your account now</a></p>
+                    <!-- </div> -->
+
+                    <div class="divider-div">
+                        <hr id="divider-1">
+                        <p>or</p>
+                        <hr id="divider-2">
+                    <!-- </div> -->
+                    <!-- <div class="login-button-with-google-div">
+            <button id="login-button-with-google"><img src="/resources/icons/google_logo.svg" alt="">Continue with
+                Google</button>
+        </div> -->
+
+                    <div class="login-button-with-google-div" id="error"
+                        style="display: none; border-color: red;margin-top: 14px; color: white; text-align: center;font-size: 22px;">
+                    </div>
+
+                    <div class="login-button-with-google-div" id="success"
+                        style="display: none; border-color: green;margin-top: 14px; color: white; text-align: center; font-size: 22px;">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="signup-space">
+        <div class="signup-stars"></div>
+        <div class="signup-stars"></div>
+        <div class="signup-stars"></div>
+        <div class="signup-stars"></div>
+        <div class="signup-stars"></div>
+        <div class="signup-stars"></div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

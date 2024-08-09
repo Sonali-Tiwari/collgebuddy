@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Document</title> -->
+  <link rel="stylesheet" href="/css/star-animation.css">
+  <link rel="stylesheet" href="/css/login-button.css">
+  <link rel="stylesheet" href="/css/rejister.css">
+</head>
+
+<body>
+
+
+  <div class="box">
+
+    <div class="login-window">
+      <div class="login-window-title">
+        <h1>Register</h1>
+        <h3 id="">Welcome to College Buddy!</h3>
+      </div>
+      <div class="process-bar">
+        <div class="process-content"></div>
+      </div>
+
+
+      <form action="" id="form" onsubmit="return false;">
+        <div>
+          <label for="name"></label>
+          <input id="name-id-field" id="Name" type="text" placeholder="Name">
+        </div>
+        <div>
+          <label for="email"></label>
+          <input id="email-id-field" id="email" type="email" placeholder="Email Address">
+        </div>
+        <div>
+
+          <label for="password"></label>
+          <input id="password-id-field" id="password" type="password" placeholder="Password">
+        </div>
+        <div>
+          <label for="phoneNo"></label>
+          <input id="phone-id-field" id="phone" type="phone" placeholder="Phone No">
+        </div>
+
+        <div id="submit-btn">
+          <input type="submit" value="Continue">
+        </div>
+
+        <!-- <div id="submit-btn">Continue</div> -->
+        <p>Already a member? <span><a href="/login">Login Here</a></span></p>
+        <div class="or-div">
+          <span></span>
+          <p>or</p>
+          <span></span>
+        </div>
+        <div class="googel" id="error" style="display: none; border-color: red; text-align: center;font-size: 19px;">
+        </div>
+
+        <div class="googel" id="success"
+          style="display: none; border-color: green;  text-align: center; font-size: 19px;">
+        </div>
+        </form>
+        <div id="form2">
+          <select name="college" id="college">
+            <option value="">Select your university or college</option>
+            <option value="Aryabhatta Knowledge University">Aryabhatta Knowledge University
+            </option>
+            <option value="Bhupendra Narayan Mandal University">Bhupendra Narayan Mandal University.
+            </option>
+            <option value="Bihar Agricultural University">Bihar Agricultural University</option>
+            <option value="Bihar Animal Sciences University">Bihar Animal Sciences University
+            </option>
+          </select>
+          <select name="course" id="course">
+            <option value="null">What is your course? </option>
+            <option value="bca">BCA (Bachelor in Computer Application)
+            </option>
+            <option value="mca">MCA (Master in Computer Application)
+            </option>
+            <option value="btech">B.Tech (Bachelor of Technology )</option>
+            <option value="bscit">BSc IT (Bachelor of Science in Information Technology)
+            </option>
+          </select>
+          <select name="sem" id="sem">
+            <option value="">In which semester you are in? </option>
+            <option value="1sem">1st Semester
+            </option>
+            <option value="2sem">2nd Semester
+            </option>
+            <option value="3sem">3rd Semester</option>
+            <option value="4sem">4th Semester
+            </option>
+            <option value="5sem">5th Semester</option>
+            <option value="6sem">6th Semester</option>
+          </select>
+          <div  id="submit-btn" type="submit"><a href="/">Start Learning Now</a>
+            <!-- a  <input type="submit" value="Start Learning Now"> -->
+          </div>
+
+
+          <div class="googel" id="eror" style="display: none; border-color: red; text-align: center;font-size: 19px;"> 
+           </div>
+
+          <div class="googel" id="sucess" style="display: none; border-color: green;  text-align: center; font-size: 19px;">
+          </div>
+
+
+
+          <p>Go back to previous step</p>
+        </div>
+    </div>
+
+  </div>
+  <!-- </form> -->
+  <div class="signup-space">
+    <div class="signup-stars"></div>
+    <div class="signup-stars"></div>
+    <div class="signup-stars"></div>
+    <div class="signup-stars"></div>
+    <div class="signup-stars"></div>
+    <div class="signup-stars"></div>
+  </div>
+
+
+  <script src="/js/register.js"></script>
+
+</body>
+
+</html>

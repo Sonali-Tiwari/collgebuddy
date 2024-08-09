@@ -1,0 +1,66 @@
+.login-window .login-button-div #login-button {
+    /* Login Button */
+
+    position: absolute;
+    width: 420px;
+    height: 60px;
+    left: 50px;
+    top: 399px;
+
+    border: none;
+    z-index: 0;
+
+    font-family: 'Uxum Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #1E1E1E;
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+.login-window .login-button-div #login-button::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #FF0000, #FF7300, #FFFB00, #48FF00,
+            #00FFD5, #002BFF, #FF00C8, #FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(10px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* hover */
+.login-window .login-button-div #login-button:hover::before {
+    opacity: 0.6;
+}
+
+.login-window .login-button-div #login-button:active:after {
+    background: transparent;
+    color: white;
+}
